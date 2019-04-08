@@ -14,7 +14,8 @@ public class Main extends Application
   public void start(Stage primaryStage) throws Exception
   {
     Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-    new JMetro(JMetro.Style.LIGHT).applyTheme(root);
+//    new JMetro(JMetro.Style.LIGHT).applyTheme(root);
+    root.getStylesheets().add("sample.css");
     primaryStage.setTitle("Pencil Sketch App");
     primaryStage.setScene(new Scene(root, 800, 600));
     primaryStage.show();
